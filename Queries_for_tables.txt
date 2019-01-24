@@ -1,0 +1,29 @@
+create table personal(uid INT NOT NULL PRIMARY KEY,fname VARCHAR(12) NOT NULL,mname VARCHAR(12) NOT NULL,lname VARCHAR(12) NOT NULL,age INT(2) NOT NULL,date DATE NOT NULL,religion VARCHAR(10) NOT NULL,gender VARCHAR(6) NOT NULL,nationality VARCHAR(10) NOT NULL,address VARCHAR(100),mail VARCHAR(15) NOT NULL,mobileno BIGINT NOT NULL,drivinglic BIGINT NOT NULL);
+
+
+create table occupation(uid INT NOT NULL PRIMARY KEY,occupation VARCHAR(15),profession VARCHAR(15),designation VARCHAR(15),income INT(2));
+
+create table bank(uid INT NOT NULL PRIMARY KEY,bank_name VARCHAR(20),branch VARCHAR(20),acc_type VARCHAR(15),acc_no INT(13),pan_no INT(11));
+
+create table vehicle(uid INT NOT NULL PRIMARY KEY,rfid_no INT(10),lic_no INT(11),reg_no INT(13),insur_no INT(13));
+
+
+create table medical(uid INT NOT NULL PRIMARY KEY,height INT (3),weight INT(3),bloodg VARCHAR(3),disease VARCHAR(25),medical_inc VARCHAR(20), medication VARCHAR(20),allergy VARCHAR(20),family_hist VARCHAR(30));
+
+create table family(uid INT NOT NULL PRIMARY KEY,f_name VARCHAR(10),f_occu VARCHAR(10),m_name VARCHAR(10),m_occu VARCHAR(10),member INT(2),mar_stat VARCHAR(10),sibling VARCHAR(20),no_child INT(2));
+
+create table crime(uid INT NOT NULL PRIMARY KEY,arrestedFor VARCHAR(30),arrest_for_int INT(2) NOT NULL,crimeLoc VARCHAR(30),crime_loc INT(2) NOT NULL, date_of_arrest DATE NOT NULL,year_of_arrest INT(4) NOT NULL, act_taken VARCHAR(30));
+
+
+forms by order:
+login
+panel
+info
+occupation
+bank
+vehicle
+medical
+family
+crime
+
+ 162541 | Prashant | Sunil | Pardeshi |  20 | 1993-06-15 | Hindu    | Male   | Indian      | katraj  | ajgsyags | 289732322 |  236236223 
